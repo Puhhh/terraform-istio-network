@@ -1,6 +1,6 @@
 # Module Description:
 
-* Certificate or Secret is created depending on the configuration. 
+* Cert Manager or Native Secret is used depending on the configuration. 
 * Istio Virtual Service is created.
 * Changes are made to Istio Gateway.
 
