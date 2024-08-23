@@ -37,6 +37,7 @@ variable "tls-crt" {
 variable "tls-key" {
   description = "Key Base64 Encoded"
   type        = string
+  sensitive   = true
   default     = null
 }
 
