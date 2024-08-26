@@ -1,13 +1,11 @@
 variable "tls-name" {
   description = "Certificate/Secret Name"
   type        = string
-  default     = null
 }
 
 variable "server-url" {
   description = "Server URL"
   type        = string
-  default     = null
 }
 
 variable "tls-certificate-cluster-issuer" {
@@ -44,29 +42,27 @@ variable "tls-key" {
 variable "istio-ingress-gateway-namespace" {
   description = "Istio Ingress Gateway namespace"
   type        = string
-  default     = null
+  default     = "istio-ingress"
 }
 
 variable "istio-ingress-gateway-name" {
   description = "Istio Ingress Gateway Name"
   type        = string
-  default     = null
+  default     = "gateway"
 }
 
 variable "server-svc-name" {
   description = "Server Service Name"
   type        = string
-  default     = null
 }
 
 variable "server-svc-namemespace" {
   description = "Server Service Namemespace"
   type        = string
-  default     = null
 }
 
 variable "destination-port" {
   description = "Destination Port"
   type        = number
-  default     = null
+
 }
