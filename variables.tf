@@ -18,6 +18,11 @@ variable "selfsigned-cluster-issuer" {
   description = "Selfsigned Cluster Issuer"
   type        = string
   default     = null
+
+  validation {
+    condition     = !(var.tls-certificate-cluster-issuer && var.selfsigned-cluster-issuer == null)
+    error_message = "selfsigned-cluster-issuer must not be null when tls-certificate-cluster-issuer is true."
+  }
 }
 
 variable "tls-certificate-files" {
@@ -30,6 +35,11 @@ variable "tls-crt" {
   description = "Crt Base64 Encoded"
   type        = string
   default     = null
+
+  validation {
+    condition     = !(var.tls-certificate-files && var.tls-crt == null)
+    error_message = "tls-crt must not be null when tls-certificate-files is true."
+  }
 }
 
 variable "tls-key" {
@@ -37,6 +47,11 @@ variable "tls-key" {
   type        = string
   sensitive   = true
   default     = null
+
+  validation {
+    condition     = !(var.tls-certificate-files && var.tls-key == null)
+    error_message = "tls-key must not be null when tls-certificate-files is true."
+  }
 }
 
 variable "istio-ingress-gateway-namespace" {
