@@ -1,3 +1,15 @@
+variable "kubeconfig-path" {
+  description = "Kubeconfig Path"
+  type        = string
+  default     = "~/.kube/config"
+}
+
+variable "kube-context" {
+  description = "Kubernetes Context to Use"
+  type        = string
+  default     = ""
+}
+
 variable "tls-name" {
   description = "Certificate/Secret Name"
   type        = string
