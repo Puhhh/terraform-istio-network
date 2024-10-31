@@ -18,8 +18,8 @@
 
 | Name | Version |
 |------|---------|
-| <a name="provider_kubernetes"></a> [kubernetes](#provider\_kubernetes) | ~> 2.0 |
-| <a name="provider_null"></a> [null](#provider\_null) | >= 2.0 |
+| <a name="provider_kubernetes"></a> [kubernetes](#provider\_kubernetes) | 2.33.0 |
+| <a name="provider_null"></a> [null](#provider\_null) | 3.2.3 |
 
 ## Modules
 
