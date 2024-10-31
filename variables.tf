@@ -79,5 +79,4 @@ variable "server-svc-namemespace" {
 variable "destination-port" {
   description = "Destination Port"
   type        = number
-
 }
